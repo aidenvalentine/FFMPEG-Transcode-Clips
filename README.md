@@ -8,6 +8,7 @@ Use FFMPEG lib to Transcode MP4s &amp; WMVs from master files using NVIDIA NVENC
 
 ## Tips
 1. Save these files to the **fastest** hard drive on your PC for best I/O performance, NVME is recommended.
-2. Transcodes will be output into the same folder the master movie file is.
-3. You can customize the **video bitrate**, **audio bitrate**, and other settings by editing the ffmpeg-transcode-clips batch scripts to suite your needs.
-4. You may also drag-and-drop your master video files on the batch files to begin transcoding process.
+1. Transcodes will be output into the same folder the master movie file is.
+1. You can customize the **video bitrate**, **audio bitrate**, and other settings by editing the ffmpeg-transcode-clips batch scripts to suite your needs.
+1. You may also drag-and-drop your master video files on the batch files to begin transcoding process.
+1. Your watermark should be 1920x1080, and overlaid in a corner of the image in exactly the spot you'd like it to appear. Use a **transparent PNG** for this file.
