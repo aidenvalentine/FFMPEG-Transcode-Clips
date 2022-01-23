@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\FfmpegProcessMaster]
+@="FFMPEG Transcode Master Video File"
+
+[HKEY_CLASSES_ROOT\*\shell\FfmpegProcessMaster\command]
+@="\"V:\\Tools\\process-master.bat\" \"%1\""
