@@ -5,6 +5,7 @@ Use FFMPEG lib to Transcode MP4s &amp; WMVs from master files using NVIDIA NVENC
 1. Download [FFMPEG binaries](https://www.gyan.dev/ffmpeg/builds/). Extract the zip/7z archive, open the resulting folder, then save the /bin folder (containing ffmpeg.exe, ffprobe.exe, and ffplay.exe) to **C:\bin**.
 1. [Add `C:\bin` to PATH environment variable on system](https://www.architectryan.com/2018/08/31/how-to-change-environment-variables-on-windows-10/).
 1. **EDIT** then double-click `/Add Context Menu - process-master.reg` to create a new Context Menu option when you right-click on a video file, to render it using our process-masters.bat and other batch files.
+1. **Important** - If you don't have a NVIDIA GPU which supports [NVENC](https://help.elgato.com/hc/en-us/articles/360027954992-Which-NVIDIA-graphic-cards-do-support-NVENC-technology-) hardware acceleration, change `-c:v h264_nvenc` and `-c:v hevc_nvenc` to `-c:v libx264` or `-c:v libx265` respectively.
 
 ## Tips
 1. Save these files to the **fastest** hard drive on your PC for best I/O performance, NVME is recommended.
